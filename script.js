@@ -45,21 +45,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Active Service Suburbs in Geelong
     const coveredSuburbs = {
-        "armstrong creek": "Yes! Armstrong Creek is one of our primary growth corridors. PK offers pickup from home, school, or Iona College.",
-        "belmont": "Yes! Belmont is fully covered. Perfect for practicing roundabouts near Wilsons Road and merging onto High Street.",
-        "east geelong": "Yes! East Geelong is covered. We conduct mock tests and route practices in this vicinity.",
+        "geelong": "Yes! Geelong CBD is fully covered. Practice city driving, one-way streets, and busy intersections around Malop Street and the waterfront.",
         "geelong west": "Yes! Geelong West is covered. Great area for practicing lane management on Pakington Street.",
         "grovedale": "Yes! Grovedale is fully covered. Convenient pickup and route prep starting near Grovedale College.",
-        "hamlyn heights": "Yes! Hamlyn Heights is in our active service area. Great residential roads for starting out.",
-        "highton": "Yes! Highton is covered. Highly recommended for practicing hills starts, clutch control and winding roads.",
+        "hamlyn heights": "Yes! Hamlyn Heights is in our active service area. Great residential roads for building early driving confidence.",
+        "herne hill": "Yes! Herne Hill is covered. Quiet streets and good hill-start practice opportunities.",
+        "highton": "Yes! Highton is covered. Excellent for practising hill starts, winding roads, and residential driving.",
         "lara": "Yes! Lara is covered. We conduct automatic driving training and freeway merging practice on the Princes Highway.",
-        "leopold": "Yes! Leopold is covered. Perfect gateway for students near the Bellarine Peninsula.",
-        "newtown": "Yes! Newtown is covered. Excellent residential zones for parallel parking practice.",
-        "wandana heights": "Yes! Wandana Heights is covered. Great hilly roads to build confidence.",
+        "lovely banks": "Yes! Lovely Banks is covered. Quiet rural-style roads perfect for nervous beginners to gain early confidence.",
+        "manifold heights": "Yes! Manifold Heights is covered. Close to Pakington Street for urban traffic practice.",
+        "marshall": "Yes! Marshall is covered. Near the train line, good for station pickup and highway transition practice.",
+        "armstrong creek": "Yes! Armstrong Creek is one of our primary growth corridors. PK offers pickup from home, school, or Iona College.",
+        "bell park": "Yes! Bell Park is covered. Great suburban roads for beginner learners with easy access to the Ring Road.",
+        "bell post hill": "Yes! Bell Post Hill is covered. Good hilly terrain to practise hill starts and braking control.",
+        "charlemont": "Yes! Charlemont is covered. New estate roads perfect for practising lane discipline and residential driving.",
+        "corio": "Yes! Corio is covered. We practise school zone awareness, residential driving, and Bacchus Marsh Road merging.",
+        "east geelong": "Yes! East Geelong is covered. We conduct mock tests and route practices in this vicinity near Garden Street.",
+        "fyansford": "Yes! Fyansford is covered. Historic area with winding roads — excellent for steering and braking practice.",
+        "mount duneed": "Yes! Mount Duneed is covered. Newer roads ideal for building confidence before transitioning to busier routes.",
+        "newcomb": "Yes! Newcomb is covered. Easy access to arterial routes for intermediate students, plus Newcomb Secondary College pickups.",
+        "newtown": "Yes! Newtown is covered. Excellent residential zones for parallel parking practice and quiet-street confidence building.",
+        "norlane": "Yes! Norlane is covered. We practise suburban driving rules, school zones, and roundabout navigation.",
+        "north geelong": "Yes! North Geelong is covered. Ideal for practicing industrial zone driving and railway crossing awareness.",
+        "north shore": "Yes! North Shore is covered. Waterfront driving near Corio Bay with gentle curves and scenic routes.",
+        "south geelong": "Yes! South Geelong is covered. Close to the VicRoads testing centre on Fyans Street — perfect for test route practice.",
+        "st albans park": "Yes! St Albans Park is covered. Great mix of residential and arterial roads for well-rounded practice.",
+        "wandana heights": "Yes! Wandana Heights is covered. Scenic hilly roads to build steering confidence and speed control.",
         "waurn ponds": "Yes! Waurn Ponds is covered. We offer direct pickup and drop-off at the Deakin University Campus.",
-        "newcomb": "Yes! Newcomb is covered. Easy access to arterial routes for intermediate students.",
-        "norlane": "Yes! Norlane is covered. We practice suburban driving rules and school zones.",
-        "marshall": "Yes! Marshall is covered. Near the train line, good for station pickup and highway transition."
+        "whittington": "Yes! Whittington is covered. Good suburban roads for learners to master speed limits and school zones."
     };
 
     function checkSuburb() {
