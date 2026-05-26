@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWithPK | Premium Automatic Driving School Geelong</title>
+    <meta name="description" content="Redesigned DriveWithPK driving school in Geelong. Professional automatic-only driving lessons, VicRoads test route preparation, patient instructors, and interactive learner tools. Book now!">
+    <meta name="author" content="drivewithpk.com.au">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DriveWithPK | Premium Automatic Driving School Geelong">
+    <meta property="og:description" content="Redesigned DriveWithPK driving school in Geelong. Professional automatic-only driving lessons, VicRoads test route preparation, patient instructors, and interactive learner tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/drive_hero.png">
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-accent">Drive</span>with<span class="logo-highlight">PK</span>
+            </a>
+            
+            <nav class="nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#pricing" class="nav-link">Packages</a></li>
+                    <li><a href="#learner-portal" class="nav-link">Learner Portal</a></li>
+                    <li><a href="#resources" class="nav-link">Resources Hub</a></li>
+                    <li><a href="#faq" class="nav-link">FAQs</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#booking" class="btn btn-primary btn-glow" id="cta-header-book">Book Lesson</a>
+                <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="close-drawer" id="close-drawer-btn" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="drawer-list">
+            <li><a href="#home" class="drawer-link">Home</a></li>
+            <li><a href="#about" class="drawer-link">About Us</a></li>
+            <li><a href="#pricing" class="drawer-link">Pricing & Packages</a></li>
+            <li><a href="#learner-portal" class="drawer-link">Progress Portal</a></li>
+            <li><a href="#resources" class="drawer-link">Resources Hub</a></li>
+            <li><a href="#faq" class="drawer-link">FAQs</a></li>
+            <li><a href="#booking" class="drawer-link btn btn-primary text-center">Book Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Grid -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container grid grid-2">
+                <div class="hero-content animate-slide-right">
+                    <div class="badge-accent"><i class="fa-solid fa-star"></i> Geelong's Top-Rated School</div>
+                    <h1>Ignite Your Confidence <br><span class="text-gradient">Behind the Wheel</span></h1>
+                    <p class="hero-lead">Accelerate your journey to freedom. We provide stress-free, automatic-only driving lessons tailored to students, young learners, and overseas license conversions across Greater Geelong.</p>
+                    
+                    <div class="hero-usp-row flex">
+                        <div class="usp-item"><i class="fa-solid fa-circle-check"></i> 99% Pass Rate</div>
+                        <div class="usp-item"><i class="fa-solid fa-shield-halved"></i> Dual Control Cars</div>
+                        <div class="usp-item"><i class="fa-solid fa-language"></i> English, Hindi & Malay</div>
+                    </div>
+                    
+                    <div class="hero-actions flex">
+                        <a href="#booking" class="btn btn-primary btn-large btn-glow">Book Online Now</a>
+                        <a href="#pricing" class="btn btn-secondary btn-large">View Prices <i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-slide-left">
+                    <div class="glass-card hero-image-card">
+                        <div class="card-glow"></div>
+                        <img src="images/drive_hero.png" alt="Drive with PK Automatic Car in Geelong" class="img-responsive hero-img">
+                        
+                        <!-- Floating Suburb Availability Checker -->
+                        <div class="suburb-checker-box glass-card">
+                            <h3><i class="fa-solid fa-location-dot"></i> Servicing Your Suburb?</h3>
+                            <p>Type in your Geelong suburb to check availability instantly.</p>
+                            <div class="checker-input-wrapper">
+                                <input type="text" id="suburb-input" placeholder="e.g., Armstrong Creek, Belmont...">
+                                <button id="suburb-check-btn" class="btn btn-primary"><i class="fa-solid fa-search"></i></button>
+                            </div>
+                            <div id="suburb-result" class="suburb-result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <h2>Meet Your Instructor <span class="text-gradient">&amp; Brand</span></h2>
+                    <p class="section-subtitle">Dedicated to creating safe, responsible, and defensive drivers.</p>
+                </div>
+                
+                <div class="grid grid-2 about-grid">
+                    <div class="about-image-wrapper animate-on-scroll">
+                        <div class="glass-card image-card-container">
+                            <img src="images/pk_model1.png" alt="PK - Driving Instructor in Geelong" class="img-responsive about-img">
+                            <div class="floating-badge text-center">
+                                <span class="badge-number">15+</span>
+                                <span class="badge-text">Years Exp.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text animate-on-scroll">
+                        <h3 class="about-headline">"Everyone deserves to feel comfortable and safe behind the wheel."</h3>
+                        <p class="about-p">At <strong>Drive with PK</strong>, we specialize exclusively in <strong>Automatic Transmission</strong> training. By focusing 100% of our attention on automatic driving, we help you master lane discipline, road rules, hazard perception, and vehicle control without the stress of gearboxes.</p>
+                        
+                        <p class="about-p">Whether you are a nervous teenager starting on your L-plates, a university student at Deakin Waurn Ponds looking to gain independence, a busy parent wishing to secure your child's safety, or an immigrant converting an overseas license to a Victorian license—we tailor our training directly to your pace and learning style.</p>
+                        
+                        <div class="about-stats grid grid-3">
+                            <div class="stat-box text-center glass-card">
+                                <i class="fa-solid fa-clock icon-yellow"></i>
+                                <div class="stat-number">10k+</div>
+                                <div class="stat-label">Hours Taught</div>
+                            </div>
+                            <div class="stat-box text-center glass-card">
+                                <i class="fa-solid fa-circle-check icon-yellow"></i>
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Automatic Focus</div>
+                            </div>
+                            <div class="stat-box text-center glass-card">
+                                <i class="fa-solid fa-comments icon-yellow"></i>
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Languages Spoken</div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-actions">
+                            <a href="#booking" class="btn btn-primary btn-glow">Book a Lesson with PK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & Interactive Calculator Section -->
+        <section id="pricing" class="pricing section-padding bg-slate-950">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <h2>Pricing &amp; <span class="text-gradient">Packages</span></h2>
+                    <p class="section-subtitle">No hidden fees. Premium training at transparent, competitive rates.</p>
+                </div>
+
+                <!-- Interactive Pricing Calculator -->
+                <div class="calculator-container glass-card animate-on-scroll">
+                    <div class="calculator-header">
+                        <h3><i class="fa-solid fa-calculator icon-yellow"></i> Interactive Lesson Calculator</h3>
+                        <p>Adjust the slider to see how much you save with our multi-hour bundles.</p>
+                    </div>
+                    
+                    <div class="calculator-body grid grid-2">
+                        <div class="calculator-control">
+                            <label for="hours-slider" class="slider-label">
+                                Lesson Hours: <span id="hours-display" class="hours-badge">10 Hours</span>
+                            </label>
+                            <input type="range" id="hours-slider" min="1" max="25" value="10" class="slider">
+                            
+                            <div class="slider-ticks flex">
+                                <span>1 Hr</span>
+                                <span>5 Hrs</span>
+                                <span>10 Hrs</span>
+                                <span>15 Hrs</span>
+                                <span>20 Hrs</span>
+                                <span>25 Hrs</span>
+                            </div>
+
+                            <ul class="calculator-benefits">
+                                <li><i class="fa-solid fa-check"></i> Free home, school, or work pickup/dropoff</li>
+                                <li><i class="fa-solid fa-check"></i> High-quality dual-control automatic hatch</li>
+                                <li><i class="fa-solid fa-check"></i> Individual performance progress report card</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calculator-display text-center flex flex-column justify-center">
+                            <div class="calculator-price-wrapper">
+                                <span class="currency">$</span>
+                                <span id="calc-total-price" class="price-val">650</span>
+                                <span class="period">AUD</span>
+                            </div>
+                            <div class="calculator-rate" id="calc-hourly-rate">Rate: $65 / Hr</div>
+                            <div class="calculator-savings" id="calc-savings">You Save: $50 (7% Discount)</div>
+                            <a href="#booking" class="btn btn-primary btn-glow btn-large mt-4" id="calculator-checkout-btn">Book Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fixed Pricing Cards -->
+                <div class="pricing-grid grid grid-4 animate-on-scroll">
+                    
+                    <!-- Card 1 -->
+                    <div class="pricing-card glass-card">
+                        <div class="card-badge">Casual</div>
+                        <h3>Single Lesson</h3>
+                        <div class="card-price">
+                            <span class="currency">$</span>
+                            <span class="price">70</span>
+                            <span class="period">/ hr</span>
+                        </div>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> 60-Minute Lesson</li>
+                            <li><i class="fa-solid fa-check"></i> Door-to-door Pickup</li>
+                            <li><i class="fa-solid fa-check"></i> Patient 1-on-1 Instruction</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Multi-lesson Discount</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Guaranteed Test Booking Car</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-secondary text-center">Book Single Lesson</a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="pricing-card glass-card">
+                        <div class="card-badge">Basic</div>
+                        <h3>5-Hour Package</h3>
+                        <div class="card-price">
+                            <span class="currency">$</span>
+                            <span class="price">335</span>
+                            <span class="period">/ 5 hrs</span>
+                        </div>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> 5 x 60-Min Lessons</li>
+                            <li><i class="fa-solid fa-check"></i> Save $15 overall</li>
+                            <li><i class="fa-solid fa-check"></i> Custom skill progress card</li>
+                            <li><i class="fa-solid fa-check"></i> Flexible scheduling</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Guaranteed Test Booking Car</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-secondary text-center">Buy 5-Pack</a>
+                    </div>
+                    
+                    <!-- Card 3 (Featured) -->
+                    <div class="pricing-card glass-card featured">
+                        <div class="card-banner">Best Value</div>
+                        <div class="card-badge">Mega Value</div>
+                        <h3>10-Hour Package</h3>
+                        <div class="card-price">
+                            <span class="currency">$</span>
+                            <span class="price">650</span>
+                            <span class="period">/ 10 hrs</span>
+                        </div>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> 10 x 60-Min Lessons</li>
+                            <li><i class="fa-solid fa-check"></i> Save $50 overall ($65/hr)</li>
+                            <li><i class="fa-solid fa-check"></i> Full dashboard access</li>
+                            <li><i class="fa-solid fa-check"></i> Test preparation checklist</li>
+                            <li><i class="fa-solid fa-check"></i> VicRoads route practice</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-primary btn-glow text-center">Buy 10-Pack</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="pricing-card glass-card">
+                        <div class="card-badge">Test Day</div>
+                        <h3>VicRoads Test Pack</h3>
+                        <div class="card-price">
+                            <span class="currency">$</span>
+                            <span class="price">190</span>
+                            <span class="period">/ package</span>
+                        </div>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> 45-Min Pre-Test Warmup</li>
+                            <li><i class="fa-solid fa-check"></i> Use of instructor car for test</li>
+                            <li><i class="fa-solid fa-check"></i> Pick up & Drop off</li>
+                            <li><i class="fa-solid fa-check"></i> Test routes preparation tips</li>
+                            <li><i class="fa-solid fa-check"></i> South Geelong VicRoads support</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-secondary text-center">Book Test Day</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learner Portal Demonstration -->
+        <section id="learner-portal" class="learner-portal section-padding">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <h2>Interactive <span class="text-gradient">Learner Portal</span></h2>
+                    <p class="section-subtitle">Track your hours, log driving skills, and prepare for your test transparently.</p>
+                </div>
+                
+                <div class="portal-grid grid grid-3 animate-on-scroll">
+                    <!-- Progress Card -->
+                    <div class="glass-card portal-card flex flex-column align-center justify-center text-center">
+                        <h3>Logbook Progress Tracker</h3>
+                        <div class="progress-ring-wrapper">
+                            <!-- Circular SVG progress bar -->
+                            <svg class="progress-ring" width="160" height="160">
+                                <circle class="progress-ring-circle-bg" stroke="#161f30" stroke-width="12" fill="transparent" r="66" cx="80" cy="80"/>
+                                <circle id="logbook-progress-circle" class="progress-ring-circle" stroke="#FFC61A" stroke-width="12" stroke-dasharray="414.69" stroke-dashoffset="207.34" stroke-linecap="round" fill="transparent" r="66" cx="80" cy="80"/>
+                            </svg>
+                            <div class="progress-ring-text">
+                                <span class="percentage" id="logbook-pct">60%</span>
+                                <span class="label">Hours Logged</span>
+                            </div>
+                        </div>
+                        <div class="hours-logged-detail mt-4">
+                            <div class="logbook-hours"><strong>72</strong> / 120 Total Hours</div>
+                            <div class="night-hours"><i class="fa-solid fa-moon icon-yellow"></i> <strong>12</strong> / 20 Night Hours</div>
+                        </div>
+                        <div class="logbook-controls flex mt-4">
+                            <button id="add-hour-btn" class="btn btn-secondary btn-small"><i class="fa-solid fa-plus"></i> Add Hour</button>
+                            <button id="reset-hour-btn" class="btn btn-text btn-small">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Competency Checklist -->
+                    <div class="glass-card portal-card">
+                        <h3>Skill Competency Checklist</h3>
+                        <p class="portal-card-desc">Check off skills as you practice them during lessons.</p>
+                        
+                        <div class="skills-checklist">
+                            <div class="skill-checkbox-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="skill-cockpit" checked>
+                                    <span class="checkmark"></span>
+                                    Cockpit Setup & Starting Procedure
+                                </label>
+                            </div>
+                            <div class="skill-checkbox-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="skill-steering" checked>
+                                    <span class="checkmark"></span>
+                                    Smooth Braking & Steering Control
+                                </label>
+                            </div>
+                            <div class="skill-checkbox-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="skill-roundabout" checked>
+                                    <span class="checkmark"></span>
+                                    Geelong Multi-lane Roundabouts
+                                </label>
+                            </div>
+                            <div class="skill-checkbox-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="skill-parking">
+                                    <span class="checkmark"></span>
+                                    Reverse Parallel Parking
+                                </label>
+                            </div>
+                            <div class="skill-checkbox-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="skill-merges">
+                                    <span class="checkmark"></span>
+                                    Latrobe Terrace Merging & Highway
+                                </label>
+                            </div>
+                            <div class="skill-checkbox-item">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="skill-3point">
+                                    <span class="checkmark"></span>
+                                    Three-Point Turn
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-bar-wrapper mt-4">
+                            <div class="progress-bar-label flex justify-between">
+                                <span>Mastery Score</span>
+                                <span id="skills-progress-text">50%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div id="skills-progress-bar" class="progress-bar-fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Upcoming Lessons & Feedback -->
+                    <div class="glass-card portal-card flex flex-column justify-between">
+                        <div>
+                            <h3>Upcoming Lesson &amp; Feedback</h3>
+                            
+                            <div class="next-lesson-box glass-card mt-3">
+                                <div class="next-lesson-title"><i class="fa-solid fa-calendar-check icon-yellow"></i> Next Scheduled Session</div>
+                                <div class="next-lesson-time">Tomorrow at 10:30 AM</div>
+                                <div class="next-lesson-details">
+                                    <span>Instructor: <strong>PK</strong></span> | 
+                                    <span>Duration: <strong>90 Mins</strong></span>
+                                </div>
+                                <div class="next-lesson-pickup">Pickup: Deakin University Waurn Ponds</div>
+                            </div>
+                            
+                            <div class="instructor-feedback-box mt-4">
+                                <div class="feedback-title">PK's Feedback from Last Lesson:</div>
+                                <p class="feedback-quote">"Excellent lane switching on Fyans street. Just remember to check your blind spots more prominently before initiating the indicators. Let's practice parallel parking next lesson."</p>
+                            </div>
+                        </div>
+                        
+                        <div class="portal-action-row">
+                            <a href="#booking" class="btn btn-primary btn-block text-center mt-3">Reschedule Lesson</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learner Resources Hub -->
+        <section id="resources" class="resources section-padding bg-slate-950">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <h2>Learner <span class="text-gradient">Resources Hub</span></h2>
+                    <p class="section-subtitle">Pass your test on the first try with our tools and quizzes.</p>
+                </div>
+
+                <div class="grid grid-2 resources-grid animate-on-scroll">
+                    
+                    <!-- Practice Learner Quiz -->
+                    <div class="glass-card resource-card">
+                        <div class="quiz-header">
+                            <h3><i class="fa-solid fa-square-poll-horizontal icon-yellow"></i> VicRoads Theory Mock Quiz</h3>
+                            <p>Test your driving knowledge with our Geelong-specific safety quiz.</p>
+                        </div>
+                        
+                        <div id="quiz-container" class="quiz-box glass-card mt-3">
+                            <div class="quiz-progress-bar">
+                                <div class="quiz-progress-fill" id="quiz-progress" style="width: 20%;"></div>
+                            </div>
+                            <div class="quiz-question-number" id="quiz-qnum">Question 1 of 5</div>
+                            <div class="quiz-question-text" id="quiz-qtext">Loading question...</div>
+                            <div class="quiz-options" id="quiz-options-list">
+                                <!-- Loaded dynamically via script.js -->
+                            </div>
+                            <div class="quiz-footer flex justify-between align-center mt-4">
+                                <div id="quiz-explanation" class="quiz-explanation hidden"></div>
+                                <button id="quiz-next-btn" class="btn btn-primary hidden">Next <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Quiz Result -->
+                        <div id="quiz-result-box" class="quiz-result-box text-center hidden">
+                            <i class="fa-solid fa-circle-check icon-yellow large-icon"></i>
+                            <h4 class="mt-3">Quiz Complete!</h4>
+                            <p class="score-display">You scored <strong id="quiz-score">4/5</strong></p>
+                            <p id="quiz-feedback-msg"></p>
+                            <button id="quiz-restart-btn" class="btn btn-secondary mt-4">Retry Quiz</button>
+                        </div>
+                    </div>
+
+                    <!-- Geelong Test Route Guides -->
+                    <div class="glass-card resource-card flex flex-column justify-between">
+                        <div>
+                            <h3><i class="fa-solid fa-map icon-yellow"></i> Geelong Driving Hotspots</h3>
+                            <p>VicRoads test routes originating from South Geelong (Fyans Street) frequently utilize these challenging areas. Review them carefully:</p>
+                            
+                            <div class="hotspots-list mt-3">
+                                <div class="hotspot-item flex align-start">
+                                    <div class="hotspot-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                                    <div class="hotspot-info">
+                                        <h5>Fyans Street & Moorabool Street Intersections</h5>
+                                        <p>Watch for lane splitting and quick light shifts during peak hours right after exiting the VicRoads center.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot-item flex align-start">
+                                    <div class="hotspot-icon"><i class="fa-solid fa-circle-notch"></i></div>
+                                    <div class="hotspot-info">
+                                        <h5>Wilsons Road Roundabout</h5>
+                                        <p>A multi-lane roundabout requiring proper signals on entry and exit. Make sure your blind spot head checks are visible.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot-item flex align-start">
+                                    <div class="hotspot-icon"><i class="fa-solid fa-gauge"></i></div>
+                                    <div class="hotspot-info">
+                                        <h5>Latrobe Terrace Merges</h5>
+                                        <p>Accelerate to match traffic speeds (70 km/h) before merging. Ensure smooth mirror checks and head checks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resources-footer mt-4">
+                            <div class="alert-box glass-card">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <span><strong>Did you know?</strong> We offer professional mock tests on these exact routes to prepare you completely.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Wizard Section -->
+        <section id="booking" class="booking section-padding">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <h2>Book Your <span class="text-gradient">First Lesson</span></h2>
+                    <p class="section-subtitle">Secure your session with PK instantly. Simple, secure digital scheduling.</p>
+                </div>
+                
+                <div class="booking-wizard-container glass-card animate-on-scroll">
+                    <!-- Steps Header -->
+                    <div class="wizard-steps flex justify-between">
+                        <div class="wizard-step active" id="wstep-1">
+                            <span class="step-num">1</span>
+                            <span class="step-label">Select Package</span>
+                        </div>
+                        <div class="wizard-step" id="wstep-2">
+                            <span class="step-num">2</span>
+                            <span class="step-label">Time & Pickup</span>
+                        </div>
+                        <div class="wizard-step" id="wstep-3">
+                            <span class="step-num">3</span>
+                            <span class="step-label">Confirm</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Booking Form -->
+                    <form id="booking-form" class="mt-4">
+                        
+                        <!-- Step 1: Lesson Details -->
+                        <div class="wizard-tab active" id="tab-1">
+                            <h4>Choose Your Lesson Duration</h4>
+                            <div class="duration-selectorgrid grid grid-3 mt-3">
+                                <div class="duration-option glass-card active" data-duration="60">
+                                    <input type="radio" name="lesson-duration" value="60" checked class="hidden-radio">
+                                    <div class="duration-time">60 Mins</div>
+                                    <div class="duration-price">$70 AUD</div>
+                                    <p>Standard casual lesson, ideal for targeted practice.</p>
+                                </div>
+                                <div class="duration-option glass-card" data-duration="90">
+                                    <input type="radio" name="lesson-duration" value="90" class="hidden-radio">
+                                    <div class="duration-time">90 Mins</div>
+                                    <div class="duration-price">$105 AUD</div>
+                                    <p>Highly recommended. More time behind the wheel for rapid skill progression.</p>
+                                </div>
+                                <div class="duration-option glass-card" data-duration="120">
+                                    <input type="radio" name="lesson-duration" value="120" class="hidden-radio">
+                                    <div class="duration-time">120 Mins</div>
+                                    <div class="duration-price">$135 AUD</div>
+                                    <p>Best value single booking. In-depth training on highway driving and test route simulations.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions flex justify-end mt-4">
+                                <button type="button" class="btn btn-primary" id="btn-next-1">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Date, Time & Pickup -->
+                        <div class="wizard-tab" id="tab-2">
+                            <h4>Scheduling &amp; Pickup Address</h4>
+                            <p class="tab-desc">We pick you up from home, school, work, or university and drop you back.</p>
+                            
+                            <div class="grid grid-2 mt-3">
+                                <div class="form-group">
+                                    <label for="booking-date">Select Date *</label>
+                                    <input type="date" id="booking-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time">Preferred Time Slot *</label>
+                                    <select id="booking-time" required>
+                                        <option value="">-- Choose Slot --</option>
+                                        <option value="09:00">09:00 AM - 10:30 AM</option>
+                                        <option value="11:00">11:00 AM - 12:30 PM</option>
+                                        <option value="13:30">01:30 PM - 03:00 PM</option>
+                                        <option value="15:30">03:30 PM - 05:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-2 mt-3">
+                                <div class="form-group">
+                                    <label for="pickup-suburb">Pickup Suburb in Geelong *</label>
+                                    <select id="pickup-suburb" required>
+                                        <option value="">-- Choose Suburb --</option>
+                                        <option value="Armstrong Creek">Armstrong Creek</option>
+                                        <option value="Belmont">Belmont</option>
+                                        <option value="East Geelong">East Geelong</option>
+                                        <option value="Geelong West">Geelong West</option>
+                                        <option value="Grovedale">Grovedale</option>
+                                        <option value="Hamlyn Heights">Hamlyn Heights</option>
+                                        <option value="Highton">Highton</option>
+                                        <option value="Lara">Lara</option>
+                                        <option value="Leopold">Leopold</option>
+                                        <option value="Marshall">Marshall</option>
+                                        <option value="Newtown">Newtown</option>
+                                        <option value="Waurn Ponds">Waurn Ponds (Deakin Campus)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pickup-address">Full Pickup Address *</label>
+                                    <input type="text" id="pickup-address" placeholder="e.g. 75 University Drive, Waurn Ponds" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions flex justify-between mt-4">
+                                <button type="button" class="btn btn-secondary" id="btn-back-2"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                                <button type="button" class="btn btn-primary" id="btn-next-2">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Contact & Confirm -->
+                        <div class="wizard-tab" id="tab-3">
+                            <h4>Confirm Your Booking &amp; Details</h4>
+                            <p class="tab-desc">Provide your contact details to submit the booking. We will send an SMS confirmation within an hour.</p>
+                            
+                            <div class="grid grid-2 mt-3">
+                                <div class="form-group">
+                                    <label for="student-name">Student Full Name *</label>
+                                    <input type="text" id="student-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="student-email">Email Address *</label>
+                                    <input type="email" id="student-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-2 mt-3">
+                                <div class="form-group">
+                                    <label for="student-phone">Mobile Phone Number *</label>
+                                    <input type="tel" id="student-phone" placeholder="0412 345 678" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="payment-method">Payment Preference *</label>
+                                    <select id="payment-method" required>
+                                        <option value="cash">Pay Cash to Instructor on Day</option>
+                                        <option value="bank">Bank Transfer (Details sent via invoice)</option>
+                                        <option value="voucher">Pre-purchased Package Voucher</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Booking Receipt Summary -->
+                            <div class="booking-summary-box glass-card mt-4">
+                                <h5>Booking Summary</h5>
+                                <div class="summary-line"><span>Selected Lesson:</span> <strong id="summary-duration">60 Mins Automatic</strong></div>
+                                <div class="summary-line"><span>Date & Time:</span> <strong id="summary-datetime">Not selected</strong></div>
+                                <div class="summary-line"><span>Pickup Location:</span> <strong id="summary-pickup">Not selected</strong></div>
+                                <div class="summary-line highlight-price"><span>Total Price:</span> <strong id="summary-price">$70 AUD</strong></div>
+                            </div>
+                            
+                            <div class="form-actions flex justify-between mt-4">
+                                <button type="button" class="btn btn-secondary" id="btn-back-3"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                                <button type="submit" class="btn btn-primary btn-glow" id="btn-submit-booking">Submit Booking <i class="fa-solid fa-check"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <!-- Booking Confirmed Message -->
+                    <div id="booking-success-box" class="booking-success-box text-center hidden">
+                        <i class="fa-solid fa-circle-check icon-yellow large-icon animate-bounce"></i>
+                        <h3 class="mt-3">Booking Request Submitted!</h3>
+                        <p class="success-lead">Thank you, <span id="success-student-name">learner</span>!</p>
+                        <p>We've sent a temporary confirmation email to <strong id="success-student-email">your email</strong>. PK will contact you shortly on your mobile to verify coordinates and lock in your session.</p>
+                        <div class="receipt-box glass-card mt-3">
+                            <div class="receipt-line"><span>Date:</span> <strong id="receipt-date">Tomorrow</strong></div>
+                            <div class="receipt-line"><span>Time:</span> <strong id="receipt-time">10:30 AM</strong></div>
+                            <div class="receipt-line"><span>Pickup Address:</span> <strong id="receipt-address">Deakin Campus</strong></div>
+                        </div>
+                        <button id="booking-reset-btn" class="btn btn-secondary mt-4">Book Another Lesson</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faq" class="faq section-padding bg-slate-950">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <h2>Frequently Asked <span class="text-gradient">Questions</span></h2>
+                    <p class="section-subtitle">Answers to common queries about getting your license in Geelong.</p>
+                </div>
+                
+                <div class="faq-list max-width-800 animate-on-scroll">
+                    
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger flex justify-between align-center">
+                            <span>Do you offer automatic and manual driving lessons?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>To deliver maximum instruction quality and focus, <strong>Drive with PK is automatic-only</strong>. Automatic driving lets you focus on road awareness and safer defensive driving rather than managing a gearstick and clutch, resulting in faster licensing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger flex justify-between align-center">
+                            <span>How many driving lessons do I need to take before my driving test?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Under Victorian law, if you are under 21, you must log 120 hours of supervised driving (including 20 night hours). The number of professional lessons depends on your starting skill, confidence, and how much practice you get with parents/guardians. Most students take 5 to 15 professional lessons to ensure they correct errors and master the actual test routes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger flex justify-between align-center">
+                            <span>What safety measures are in place during lessons?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our dual-control training vehicles allow PK to intervene and control braking or steering if any safety risk occurs. The training cars are modern, fully insured, and have regular safety assessments. We also clean and sanitize the vehicle cockpit before every lesson for hygiene.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger flex justify-between align-center">
+                            <span>Do you provide pick-up and drop-off services for driving lessons?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide convenient door-to-door pick-up and drop-off services across all of our serviced suburbs in Geelong. You can start the lesson from your home, school, work, or Deakin Waurn Ponds and end it at another pre-agreed location (within our coverage area).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger flex justify-between align-center">
+                            <span>Do you support overseas license conversions?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we have extensive experience helping overseas license holders adapt to driving on the left side of the road, understanding unique Victorian rules (like hook turns in Melbourne, or local multi-lane roundabouts in Geelong), and successfully passing the VicRoads practical drive test.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger flex justify-between align-center">
+                            <span>What languages do you offer for training?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We are proud to serve a diverse client base and can offer lessons in <strong>English</strong>, <strong>Hindi</strong>, and <strong>Malay</strong>. If you feel more comfortable receiving instructions or test strategies in Hindi or Malay, please let us know when booking!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Showcase section -->
+        <section class="brand-showcase section-padding">
+            <div class="container grid grid-2 align-center">
+                <div class="showcase-content animate-on-scroll">
+                    <h2>Redesigning <span class="text-gradient">The Brand Identity</span></h2>
+                    <p class="showcase-lead">We have reimagined the brand with premium visuals. The campaign matches a modern tech-forward driving school that parents trust and students love to engage with.</p>
+                    <p>Below is our new brand campaign visual, highlighting confidence on Geelong roads, with professional guidance every step of the way.</p>
+                    <div class="quote-card glass-card mt-4">
+                        <i class="fa-solid fa-quote-left quote-icon icon-yellow"></i>
+                        <p class="quote-text">"PK made me feel so calm during my lessons. I used to be terrified of the roundabouts on Wilsons Road, but after a few sessions, I passed my test on the first go!"</p>
+                        <div class="quote-author">- Sarah T., Armstrong Creek</div>
+                    </div>
+                </div>
+                
+                <div class="showcase-visual animate-on-scroll text-center">
+                    <div class="glass-card brand-image-card">
+                        <img src="images/pk_model2.png" alt="Drive with PK Campaign Image" class="img-responsive campaign-showcase-img">
+                        <div class="showcase-caption">Drive with PK brand marketing campaign card.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container grid grid-4">
+            <div class="footer-about">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-accent">Drive</span>with<span class="logo-highlight">PK</span>
+                </a>
+                <p class="footer-desc mt-3">Geelong's premium automatic driving school. Cultivating confident, safe, and defensive drivers since 2024.</p>
+                <div class="social-links flex mt-3">
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/61412345678" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About PK</a></li>
+                    <li><a href="#pricing">Pricing &amp; Sliders</a></li>
+                    <li><a href="#learner-portal">Progress Portal</a></li>
+                    <li><a href="#resources">Quiz &amp; Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><i class="fa-solid fa-envelope icon-yellow"></i> hello@drivewithpk.com.au</p>
+                <p><i class="fa-solid fa-location-dot icon-yellow"></i> 18 Cavendish Street, Geelong VIC 3220</p>
+                <p><i class="fa-solid fa-clock icon-yellow"></i> Mon - Fri: 9:00 AM - 5:00 PM</p>
+                <p><i class="fa-solid fa-calendar-days icon-yellow"></i> Sat - Sun: By Appointment</p>
+            </div>
+            
+            <div class="footer-accreditation">
+                <h4>Accreditation</h4>
+                <div class="accreditation-badges grid grid-2">
+                    <div class="badge-item glass-card text-center"><i class="fa-solid fa-shield-halved icon-yellow"></i><br>VicRoads Lic</div>
+                    <div class="badge-item glass-card text-center"><i class="fa-solid fa-graduation-cap icon-yellow"></i><br>Keys2Drive</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p class="acknowledgment">Acknowledgment of Country: We acknowledge the Wadawurrung People as the Traditional Owners of the land and waterways of the Geelong region, and pay our respects to their Elders past, present, and emerging.</p>
+                <hr class="footer-divider">
+                <p class="copyright">&copy; 2026 DriveWithPK. All Rights Reserved. Redesigned with premium aesthetics.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
